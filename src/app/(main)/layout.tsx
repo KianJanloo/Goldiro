@@ -18,7 +18,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <div className="flex flex-col gap-4 w-full">
+        <div className="flex flex-col h-full gap-4 w-full">
           <Header />
           <div className="w-full">
             {children}
