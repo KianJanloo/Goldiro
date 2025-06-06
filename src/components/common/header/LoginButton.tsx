@@ -1,10 +1,9 @@
 import React from 'react'
+import CommonButton from '../buttons/CommonButton'
 
 const LoginButton = () => {
   return (
-    <div className='bg-gold text-gold-foreground text-sm cursor-pointer px-4 py-1 rounded-2xl'>
-      <span> ورود یا ثبت نام </span>
-    </div>
+    <CommonButton title=' ورود یا ثبت نام ' className='bg-gold text-gold-foreground' />
   )
 }
 

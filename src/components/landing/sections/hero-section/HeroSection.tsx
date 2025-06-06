@@ -5,13 +5,17 @@ import FirstDetail from './FirstDetail'
 import SecondDetail from './SecondDetail'
 
 const HeroSection = () => {
-    return (
-        <div className='w-full'>
-            <Image src={HeroSectionBanner || "  "} alt='' className='w-full h-[800px] -z-10 ' />
-            <FirstDetail />
-            <SecondDetail />
-        </div>
-    )
+  return (
+    <div className='w-full absolute top-0'>
+      <Image
+        src={HeroSectionBanner}
+        alt=' '
+        className='w-full h-[500px] md:h-[700px] lg:h-[900px] object-cover -z-10'
+      />
+      <FirstDetail />
+      <SecondDetail />
+    </div>
+  )
 }
 
 export default HeroSection

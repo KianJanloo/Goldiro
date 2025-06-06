@@ -1,9 +1,11 @@
-import { Ear, Fingerprint, PersonStanding, Watch } from "lucide-react";
+import { Ear, Eye, Fingerprint, PersonStanding, Shell, Watch } from "lucide-react";
 
 const categories = [
     { title: " گوشواره ", icon: Ear },
+    { title: " پیرسینگ ", icon: Eye },
     { title: " گردنبند ", icon: PersonStanding },
-    { title: " ساعت ", Watch },
+    { title: " ساعت ", icon: Watch },
+    { title: " پابند ", icon: Shell },
     { title: " انگشتر ", icon: Fingerprint }
 ]
 

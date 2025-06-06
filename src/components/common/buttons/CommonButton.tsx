@@ -11,7 +11,7 @@ const CommonButton: FC<ICommonButton> = ({ className = '', title, icon, href, ..
                     redirect(href)
                 }
             }}
-            className={`cursor-pointer flex justify-between gap-4 items-center px-4 py-2 w-fit rounded-2xl text-sm ${className}`}
+            className={`cursor-pointer hover:scale-[1.03] transition-all duration-300 flex justify-between gap-4 items-center px-4 py-2 w-fit rounded-2xl text-sm ${className}`}
             {...options}
         >
             {title}
