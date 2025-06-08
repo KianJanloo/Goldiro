@@ -3,7 +3,7 @@ import CommonButton from '../buttons/CommonButton'
 
 const LoginButton = () => {
   return (
-    <CommonButton title=' ورود یا ثبت نام ' className='bg-gold text-gold-foreground' />
+    <CommonButton href='/auth/login' title=' ورود یا ثبت نام ' className='bg-gold text-gold-foreground' />
   )
 }
 
