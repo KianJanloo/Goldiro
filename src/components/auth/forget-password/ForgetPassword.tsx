@@ -8,6 +8,7 @@ import Link from 'next/link'
 import OTPInput from '@/components/common/inputs/input-otp/OTPInput'
 import Timer from '../timer/Timer'
 import Logo from '@/components/common/texts/logo/Logo'
+import { BlurFade } from '@/components/ui/blur-fade'
 
 const ForgetPassword = () => {
 
@@ -15,7 +16,7 @@ const ForgetPassword = () => {
     const [email, setEmail] = useState<string>("")
 
     return (
-        <div
+        <BlurFade
             className=" md:w-[500px] max-md:mx-[20px] flex p-4 flex-col gap-8 bg-gradient-to-br from-secondary/40 via-secondary/30 to-secondary/10 rounded-2xl border border-secondary/20 mx-auto "
         >
             <div className='w-full flex justify-between gap-4 flex-wrap'>
@@ -43,7 +44,7 @@ const ForgetPassword = () => {
                     <CommonButton className='min-w-1/2 max-md:w-full bg-gold text-gold-foreground justify-center ' title=' تایید کد ارسال شده ' icon={<ChevronLeft size={20} />} />
                 </div>
             </div>
-        </div>
+        </BlurFade>
     )
 }
 

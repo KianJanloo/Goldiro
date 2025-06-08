@@ -8,7 +8,7 @@ import { IProductCard } from '@/types/card-type/card-type'
 
 const ProductCard: FC<IProductCard> = ({ discount }) => {
 
-    const DiscountPrice = splitNumber((discount * 18000000) / 100)
+    const DiscountPrice = discount && splitNumber((discount * 18000000) / 100)
     const NormalPrice = splitNumber(18000000)
 
     return (
@@ -34,7 +34,7 @@ const ProductCard: FC<IProductCard> = ({ discount }) => {
                     {discount && <span className='text-xs text-foreground/60 line-through '> {NormalPrice} </span>}
                     <h2 className='text-xl max-md:text-lg'> {discount ? DiscountPrice : NormalPrice} ت </h2>
                 </div>
-                <CommonButton icon={<ChevronLeft size={16} />} title=' مشاهده ' className='bg-gold text-gold-foreground py-1 max-md:w-full max-md:justify-center max-md:text-sm' />
+                <CommonButton icon={<ChevronLeft size={16} />} href={`/products/${1}`} title=' مشاهده ' className='bg-gold text-gold-foreground py-1 max-md:w-full max-md:justify-center max-md:text-sm' />
             </div>
         </div>
     )

@@ -16,7 +16,7 @@ const Landing = () => {
         <NewProducts />
         <Favorites />
       </div>
-      <div className='my-[40px]'>
+      <div className='my-[40px] max-lg:px-4'>
         <OffersSection />
       </div>
     </div>

@@ -3,6 +3,7 @@ import React from 'react'
 import Category from './Category';
 import Title from '@/components/common/texts/title/Title';
 import SubTitle from '@/components/common/texts/subTitle/SubTitle';
+import { BlurFade } from '@/components/ui/blur-fade';
 
 const Categories = async () => {
 
@@ -15,7 +16,9 @@ const Categories = async () => {
       <div className='w-full flex gap-8 flex-wrap justify-center'>
         {categories.map(({ title, icon: Icon }, idx) =>
           Icon ? (
-            <Category key={idx} title={title} icon={<Icon size={30} />} />
+            <BlurFade inView delay={idx * 0.2} key={idx}>
+              <Category title={title} icon={<Icon size={30} />} />
+            </BlurFade>
           ) : null
         )}
       </div>

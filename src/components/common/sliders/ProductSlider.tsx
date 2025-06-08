@@ -8,6 +8,7 @@ import {
 import ProductCard from "../cards/ProductCard"
 import { FC } from "react"
 import { IProductSlider } from "@/types/slider-type/slider-type"
+import { BlurFade } from "@/components/ui/blur-fade"
 
 const ProductSlider: FC<IProductSlider> = ({ discount }) => {
     return (
@@ -15,7 +16,9 @@ const ProductSlider: FC<IProductSlider> = ({ discount }) => {
             <CarouselContent>
                 {Array.from({ length: 6 }).map((_, index) => (
                     <CarouselItem key={index} className="md:pl-8 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                        <ProductCard discount={discount} />
+                        <BlurFade delay={index * 0.3} inView >
+                            <ProductCard discount={discount} />
+                        </BlurFade>
                     </CarouselItem>
                 ))}
             </CarouselContent>
