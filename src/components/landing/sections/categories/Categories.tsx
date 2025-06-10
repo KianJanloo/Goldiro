@@ -1,9 +1,9 @@
-import { getCategories } from '@/utils/services/api/landing/categories/getCategories'
 import React from 'react'
 import Category from './Category';
 import Title from '@/components/common/texts/title/Title';
 import SubTitle from '@/components/common/texts/subTitle/SubTitle';
 import { BlurFade } from '@/components/ui/blur-fade';
+import { getCategories } from '@/utils/services/api/categories/getCategories';
 
 const Categories = async () => {
 

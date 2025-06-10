@@ -1,3 +1,3 @@
 export interface IProductSlider {
-    discount: number;
+    discount?: number;
 }

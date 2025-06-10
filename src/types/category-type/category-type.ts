@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 export interface ICategory {
-    title: string;
+    label: string;
+    value: string;
     icon: ReactNode;
 }

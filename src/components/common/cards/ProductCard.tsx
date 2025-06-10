@@ -5,6 +5,7 @@ import CommonButton from '../buttons/CommonButton'
 import { splitNumber } from '@/utils/helper/split-number'
 import { ChevronLeft } from 'lucide-react'
 import { IProductCard } from '@/types/card-type/card-type'
+import OfferBTN from '../offer-btn/OfferBTN'
 
 const ProductCard: FC<IProductCard> = ({ discount }) => {
 
@@ -19,7 +20,7 @@ const ProductCard: FC<IProductCard> = ({ discount }) => {
             <div className='flex flex-col gap-2 w-full'>
                 <div className='flex w-full justify-between flex-wrap gap-2'>
                     <h2 className='text-lg'> ساعت رولکس B46 </h2>
-                    {discount && <div className='bg-danger text-danger-foreground px-4 py-0.5 text-base rounded-2xl flex justify-center items-center'> {discount}% </div>}
+                    {discount && <OfferBTN discount_percent={discount} />}
                 </div>
                 <span className='text-foreground/60 text-sm w-full line-clamp-2'>
                     یکی از بهترین ساعت های رولکس مردونه زنونه در سرار جهان که در سال 2024 تولید شده است.
